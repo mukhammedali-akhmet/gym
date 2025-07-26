@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRONZE GYM</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__strip">
+            <div class="header__container">
+                <p class="header__strip-text">
+                    Официальный сайт производителя
+                </p>
+                <img src="./assets/images/pro.svg" alt="PRO">
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="header__container">
+                <div class="header__main-left">
+                    <div class="header__location">
+                        <img src="./assets/icons/location.svg" alt="Location icon">
+                        <span>Москва</span>
+                    </div>
+                    <div class="header__logo">
+                        <img src="./assets/logo.png" alt="BRONZE GYM logo">
+                        <span>Официальный сайт производителя</span>
+                    </div>
+                    <div class="header__catalog">
+                        <a href="/" class="btn-small btn-primary">
+                            <img src="./assets/icons/menu-two-line.svg" alt="Menu icon">
+                            <span>Каталог</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__main-right">
+                    <div class="header__main-right-top">
+                        <ul class="header__contacts">
+                            <li class="header__contact">
+                                <h4>Отдел продаж</h4>
+                                <a href="tel:+74959708450">+7 (495) 970-84-50</a>
+                                <a href="mailto:info@bronzegym.ru">info@bronzegym.ru</a>
+                            </li>
+                            <li class="header__contact">
+                                <h4>Гос. закупки:</h4>
+                                <a href="tel:+79801776261">+7(980) 177-62-61</a>
+                                <a href="mailto:B2G@bronzegym.ru">B2G@bronzegym.ru</a>
+                            </li>
+                        </ul>
+                        <div class="header__actions">
+                            <a href="/" class="header__action">
+                                <span>Написать нам</span>
+                                <img src="./assets/icons/arrow-down.svg" alt="Arrow Down icon">
+                            </a>
+                            <a href="/" class="header__action">
+                                <span>Оставить заявку</span>
+                            </a>
+                            <a href="/" class="header__action">
+                                <span>Заказать звонок</span>
+                            </a>
+                        </div>
+                        <div class="header__user-tools">
+                            <button class="header__user-tool search">
+                                <img src="./assets/icons/search.svg" alt="">
+                            </button>
+                            <a href="/" class="header__user-tool bookmark">
+                                <span>0</span>
+                                <img src="./assets/icons/menu-unfold-outlined.svg" alt="">
+                            </a>
+                            <a href="/" class="header__user-tool cart">
+                                <span>17</span>
+                                <img src="./assets/icons/cart.svg" alt="">
+                            </a>
+                        </div>
+                        <button class="header__burger-toggle" id="burger-toggle">
+                            <img src="./assets/icons/burger-menu-closed.svg" alt="">
+                            <img src="./assets/icons/burger-menu-opened.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="header__main-right-bottom">
+                        <ul class="header__nav-list">
+                            <li>
+                                <a href="/">О нас</a>
+                            </li>
+                            <li id="solutions-context-menu-toggle">
+                                <span>Решения</span>
+                                <img src="./assets/icons/arrow-down-white.svg" alt="">
+                            </li>
+                            <li>
+                                <a href="/">Проекты</a>
+                            </li>
+                            <li>
+                                <a href="/">Клубам</a>
+                            </li>
+                            <li class="header__nav-list-more">
+                                <a href="/">Дилерам</a>
+                            </li>
+                            <li>
+                                <a href="/">Гос. учреждениям</a>
+                            </li>
+                            <li>
+                                <a href="/">Отелям</a>
+                            </li>
+                            <li class="header__nav-list-more">
+                                <a href="/">Новости</a>
+                            </li>
+                            <li class="header__nav-list-more">
+                                <a href="/">Контакты</a>
+                            </li>
+                            <li id="more-context-menu-toggle">
+                                <div class="more-context-menu-toggle">
+                                    <span>Еще</span>
+                                    <img src="./assets/icons/arrow-down-white.svg" alt="">
+                                </div>
+                                <div id="more-context-menu-content">
+                                    <ul>
+                                        <li>
+                                            <a href="/">Дилерам</a>
+                                        </li>
+                                        <li>
+                                            <a href="/">Новости</a>
+                                        </li>
+                                        <li>
+                                            <a href="/">Контакты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <button id="search-btn">
+                                <img src="./assets/icons/search.svg" alt="Search">
+                            </button>
+                        </ul>
+                        <div id="solutions-context-menu-content">
+                            <ul>
+                                <li>
+                                    <a href="/">Оборудование под ключ в лизинг</a>
+                                </li>
+                                <li>
+                                    <a href="/">Оборудование под ключ</a>
+                                </li>
+                                <li>
+                                    <a href="/">Клуб под ключ</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="/">Типовые решения</a>
+                                </li>
+                                <li>
+                                    <a href="/">Для тренажерного зала</a>
+                                </li>
+                                <li>
+                                    <a href="/">Для залов ЛФК</a>
+                                </li>
+                                <li>
+                                    <a href="/">Для корпоративного зала</a>
+                                </li>
+                                <li>
+                                    <a href="/">Для кроссфит-зала</a>
+                                </li>
+                                <li>
+                                    <a href="/">Для фитнес-студий</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- <div class="header__page-heading">
+            <div class="header__container">
+                <div class="header__page-breadcumps">
+                    <a href="/">Главная</a>
+                    <img src="./assets/icons/line-arrow.svg" alt="">
+                    <a href="/">Проекты</a>
+                </div>
+                <h1 class="header__page-title">
+                    Наши проекты
+                </h1>
+            </div>
+        </div> -->
+        <div class="header__burger-content" id="burger-content">
+            <div class="header__burger-light"></div>
+            <div class="header__burger-light"></div>
+            <div class="header__container">
+                <div class="header__burger-location">
+                    <img src="./assets/icons/location.svg" alt="Location icon">
+                    <span>Москва</span>
+                </div>
+                <ul class="header__burger-contacts">
+                    <li class="header__contact">
+                        <h4>Отдел продаж</h4>
+                        <a href="tel:+74959708450">+7 (495) 970-84-50</a>
+                        <a href="mailto:info@bronzegym.ru">info@bronzegym.ru</a>
+                    </li>
+                    <li class="header__contact">
+                        <h4>Гос. закупки:</h4>
+                        <a href="tel:+79801776261">+7(980) 177-62-61</a>
+                        <a href="mailto:B2G@bronzegym.ru">B2G@bronzegym.ru</a>
+                    </li>
+                </ul>
+                <div class="header__burger-actions">
+                    <a href="/" class="btn-small btn-primary">
+                        <img src="./assets/icons/whatsapp.svg" alt="">
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="/" class="btn-small btn-primary">
+                        <img src="./assets/icons/telegram.svg" alt="">
+                        <span>Telegram</span>
+                    </a>
+                    <a href="/" class="header__action">
+                        <span>Оставить заявку</span>
+                    </a>
+                    <a href="/" class="header__action">
+                        <span>Заказать звонок</span>
+                    </a>
+                </div>
+                <div class="header__burger-catalog">
+                    <a href="/" class="btn-small btn-primary">
+                        <img src="./assets/icons/menu-two-line.svg" alt="Menu icon">
+                        <span>Каталог</span>
+                    </a>
+                </div>
+                <ul class="header__burger-nav">
+                    <li>Решения</li>
+                    <li>Клубам</li>
+                    <li>Проекты</li>
+                    <li>Дилерам</li>
+                    <li>Новости</li>
+                    <li>Гос. учреждениям</li>
+                    <li>О компании</li>
+                    <li>Отелям</li>
+                </ul>
+                <div class="header__burger-bottom">
+                    <ul class="header__burger-socials">
+                        <li>
+                            <img src="./assets/icons/socials/youtube.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/icons/socials/vk.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/icons/socials/telegram.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/icons/socials/rutube.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/icons/socials/zen.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/icons/socials/vcru.svg" alt="">
+                        </li>
+                    </ul>
+                    <div class="header__burger-logo">
+                        <img class="" src="./assets/logo-burger.svg" alt="">
+                        <p class="header__burger-copyright">© Bronze Gym 2009-2025</p>
+                    </div>
+                    <div class="header__burger-policy">
+                        <a href="/">Обработка персональных данных</a>
+                        <a href="/">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section></section>
+    </main>
+    <footer class="footer">
+        <div class="footer__light"></div>
+        <div class="footer__light"></div>
+        <div class="footer__container">
+            <div class="footer__info">
+                <nav class="footer__nav">
+                    <div class="footer__start">
+                        <img class="footer__pro" src="./assets/images/pro-footer.svg" alt="">
+                        <a href="/" download class="footer__catalog-download btn-primary btn-small">
+                            <span>Получить каталог</span>
+                            <img src="./assets/icons/download.svg" alt="">
+                        </a>
+                        <div class="footer__contacts">
+                            <h4 class="footer__location">Москва</h4>
+                            <a class="footer__tel" href="tel:+74959708450">+7 (495) 970-84-50</a>
+                            <a class="footer__email" href="mailto:info@bronzegym.ru">info@bronzegym.ru</a>
+                            <p class="footer__adress">115230, Москва, Каширское <br> шоссе 19, к.1</p>
+                        </div>
+                    </div>
+                    <ul class="footer__list first">
+                        <h3>Каталог</h3>
+                        <li><a href="/">Беговые дорожки</a></li>
+                        <li><a href="/">Эллиптические тренажеры</a></li>
+                        <li><a href="/">Степперы и эскалаторы</a></li>
+                        <li><a href="/">Функциональный и групповой тренинг</a></li>
+                        <li><a href="/">Гребные тренажеры</a></li>
+                        <li><a href="/">Силовые тренажеры</a></li>
+                        <li><a href="/">Свободные веса</a></li>
+                        <li><a href="/">Аксессуары</a></li>
+                        <li><a href="/">Сервисные услуги</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <h3>Решения</h3>
+                        <li><a href="/">Типовые решения</a></li>
+                        <li><a href="/">Оборудование под ключ</a></li>
+                        <li><a href="/">Клуб под ключ</a></li>
+                        <li><a href="/">Оборудование под ключ в лизинг</a></li>
+                        <li><a href="/">Для тренажерного зала</a></li>
+                        <li><a href="/">Для залов ЛФК</a></li>
+                        <li><a href="/">Для корпоративного зала</a></li>
+                        <li><a href="/">Для кроссфит-зала</a></li>
+                        <li><a href="/">Для фитнес-студий</a></li>
+                        <li><a href="/">Для частных домов</a></li>
+                    </ul>
+                    <ul class="footer__page-list">
+                        <div>
+                            <li class="footer__page-list-responsive"><a href="/">Каталог</a></li>
+                            <li class="footer__page-list-responsive"><a href="/">Решения</a></li>
+                            <li><a href="/">Проекты</a></li>
+                        </div>
+                        <div>
+                            <li><a href="/">Клубам</a></li>
+                            <li><a href="/">Дилерам</a></li>
+                            <li><a href="/">Гос. учреждениям</a></li>
+                            <li><a href="/">Отелям</a></li>
+                        </div>
+                        <li><a href="/">Новости</a></li>
+                        <li><a href="/">О компании</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__links">
+                    <div class="footer__messengers">
+                        <a href="/" class="btn-small btn-primary">
+                            <img src="./assets/icons/whatsapp.svg" alt="">
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="/" class="btn-small btn-primary">
+                            <img src="./assets/icons/telegram.svg" alt="">
+                            <span>Telegram</span>
+                        </a>
+                    </div>
+                    <ul class="footer__socials">
+                        <li>
+                            <img src="./assets/icons/socials/youtube.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/icons/socials/vk.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/icons/socials/telegram.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/icons/socials/rutube.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/icons/socials/zen.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/icons/socials/vcru.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__brand">
+                <img src="./assets/logo-burger.svg" alt="">
+                <div>
+                    <p class="footer__copyright">© Bronze Gym 2009-2025</p>
+                    <div class="footer__policy">
+                        <a href="/">Обработка персональных данных</a>
+                        <a href="/">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>

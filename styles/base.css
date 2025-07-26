@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    letter-spacing: -0.05em;
+    line-height: 1.1;
+}
+
+[class*="__container"] {
+    width: 1440px;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1400px) {
+    [class*="__container"] {
+        width: 1120px;
+        max-width: 93.33%;
+    }
+}
+
+@media (max-width: 600px) {
+    [class*="__container"] {
+        max-width: 90%;
+    }
+}
+
+section {
+    background-image: url("../assets/images/hero-background.png");
+    background-position: start;
+    background-size: cover;
+    height: 100vh;
+}
+
+a {
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--primary);
+}
