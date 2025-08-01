@@ -20,3 +20,11 @@ button {
     color: inherit;
     cursor: pointer;
 }
+
+input {
+    background: none;
+    border: none;
+    font-size: inherit;
+    outline: none;
+    color: inherit;
+}

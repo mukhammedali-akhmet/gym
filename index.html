@@ -51,10 +51,22 @@
                             </li>
                         </ul>
                         <div class="header__actions">
-                            <a href="/" class="header__action">
-                                <span>Написать нам</span>
-                                <img src="./assets/icons/arrow-down.svg" alt="Arrow Down icon">
-                            </a>
+                            <div class="header__action message">
+                                <button id="header-message-trigger" type="button">
+                                    <span>Написать нам</span>
+                                    <img src="./assets/icons/arrow-down.svg" alt="Arrow Down icon">
+                                </button>
+                                <div class="header__action-messages">
+                                    <a href="/">
+                                        <img src="./assets/icons/whatsapp.svg" alt="">
+                                        <span>WhatsApp</span>
+                                    </a>
+                                    <a href="/">
+                                        <img src="./assets/icons/telegram.svg" alt="">
+                                        <span>Telegram</span>
+                                    </a>
+                                </div>
+                            </div>
                             <a href="/" class="header__action">
                                 <span>Оставить заявку</span>
                             </a>
@@ -63,14 +75,20 @@
                             </a>
                         </div>
                         <div class="header__user-tools">
-                            <button class="header__user-tool search">
-                                <img src="./assets/icons/search.svg" alt="">
-                            </button>
+                            <div id="mobile-search-content" class="header__user-tool search">
+                                <button type="button" id="mobile-search-trigger">
+                                    <img src="./assets/icons/search.svg" alt="">
+                                </button>
+                                <input type="text" placeholder="Напишите здесь">
+                                <button id="mobile-search-close" title="Закрыть" type="button">
+                                    <img src="./assets/icons/close.svg" alt="Close">
+                                </button>
+                            </div>
                             <a href="/" class="header__user-tool bookmark">
                                 <span>0</span>
                                 <img src="./assets/icons/menu-unfold-outlined.svg" alt="">
                             </a>
-                            <a href="/" class="header__user-tool cart">
+                            <a id="header-cart-open" href="/" class="header__user-tool cart">
                                 <span>17</span>
                                 <img src="./assets/icons/cart.svg" alt="">
                             </a>
@@ -81,7 +99,7 @@
                         </button>
                     </div>
                     <div class="header__main-right-bottom">
-                        <ul class="header__nav-list">
+                        <ul id="header-nav-list" class="header__nav-list">
                             <li>
                                 <a href="/">О нас</a>
                             </li>
@@ -129,10 +147,21 @@
                                     </ul>
                                 </div>
                             </li>
-                            <button id="search-btn">
+                            <button id="search-btn" title="Поиск">
                                 <img src="./assets/icons/search.svg" alt="Search">
                             </button>
                         </ul>
+                        <form id="search-field">
+                            <button type="submit">
+                                <img src="./assets/icons/search.svg" alt="Search">
+                            </button>
+                            <div class="header__search-input">
+                                <input type="text" placeholder="Напишите здесь">
+                            </div>
+                            <button id="search-close" title="Закрыть" type="button">
+                                <img src="./assets/icons/close.svg" alt="Close">
+                            </button>
+                        </form>
                         <div id="solutions-context-menu-content">
                             <ul>
                                 <li>
@@ -168,7 +197,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <!-- <div class="header__page-heading">
@@ -268,10 +296,130 @@
             </div>
         </div>
     </header>
+    <div id="scroll-menu">
+        <div class="scroll-menu__container">
+            <div class="scroll-menu__catalog">
+                <a href="/" class="btn-small btn-primary">
+                    <img src="./assets/icons/menu-two-line.svg" alt="Menu icon">
+                    <span>Каталог</span>
+                </a>
+            </div>
+            <div class="scroll-menu__nav">
+                <ul class="scroll-menu__list">
+                    <li>
+                        <a href="/">О нас</a>
+                    </li>
+                    <li id="scroll-menu-solutions-context-menu-toggle">
+                        <span>Решения</span>
+                        <img src="./assets/icons/arrow-down.svg" alt="">
+                    </li>
+                    <li>
+                        <a href="/">Проекты</a>
+                    </li>
+                    <li>
+                        <a href="/">Клубам</a>
+                    </li>
+                    <li class="scroll-menu-nav-list-more">
+                        <a href="/">Дилерам</a>
+                    </li>
+                    <li>
+                        <a href="/">Гос. учреждениям</a>
+                    </li>
+                    <li>
+                        <a href="/">Отелям</a>
+                    </li>
+                    <li class="scroll-menu-nav-list-more">
+                        <a href="/">Новости</a>
+                    </li>
+                    <li class="scroll-menu-nav-list-more">
+                        <a href="/">Контакты</a>
+                    </li>
+                    <li id="scroll-menu-more-context-menu-toggle">
+                        <div class="more-context-menu-toggle">
+                            <span>Еще</span>
+                            <img src="./assets/icons/arrow-down.svg" alt="">
+                        </div>
+                        <div id="scroll-menu-more-context-menu-content">
+                            <ul>
+                                <li>
+                                    <a href="/">Дилерам</a>
+                                </li>
+                                <li>
+                                    <a href="/">Новости</a>
+                                </li>
+                                <li>
+                                    <a href="/">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <a href="/" class="header__action">
+                        <span>Заказать звонок</span>
+                    </a>
+                </ul>
+                <div id="scroll-menu-solutions-context-menu-content">
+                    <ul>
+                        <li>
+                            <a href="/">Оборудование под ключ в лизинг</a>
+                        </li>
+                        <li>
+                            <a href="/">Оборудование под ключ</a>
+                        </li>
+                        <li>
+                            <a href="/">Клуб под ключ</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="/">Типовые решения</a>
+                        </li>
+                        <li>
+                            <a href="/">Для тренажерного зала</a>
+                        </li>
+                        <li>
+                            <a href="/">Для залов ЛФК</a>
+                        </li>
+                        <li>
+                            <a href="/">Для корпоративного зала</a>
+                        </li>
+                        <li>
+                            <a href="/">Для кроссфит-зала</a>
+                        </li>
+                        <li>
+                            <a href="/">Для фитнес-студий</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <form id="scroll-menu-search-field">
+                <div class="header__search-input">
+                    <input type="text" placeholder="Напишите здесь">
+                </div>
+                <button id="scroll-menu-search-close" title="Закрыть" type="button">
+                    <img src="./assets/icons/close.svg" alt="Close">
+                </button>
+            </form>
+            <div class="scroll-menu__user-tools">
+                <div class="scroll-menu__user-tool search">
+                    <button id="scroll-menu-search-open" type="button">
+                        <img src="./assets/icons/search.svg" alt="">
+                    </button>
+                </div>
+                <a href="/" class="scroll-menu__user-tool bookmark">
+                    <span>0</span>
+                    <img src="./assets/icons/menu-unfold-outlined.svg" alt="">
+                </a>
+                <a href="/" class="scroll-menu__user-tool cart">
+                    <span>17</span>
+                    <img src="./assets/icons/cart.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
     <main>
         <section></section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer__light"></div>
         <div class="footer__light"></div>
         <div class="footer__container">
@@ -375,7 +523,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script src="./main.js"></script>
 </body>
 

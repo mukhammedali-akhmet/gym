@@ -32,13 +32,5 @@ section {
     background-image: url("../assets/images/hero-background.png");
     background-position: start;
     background-size: cover;
-    height: 100vh;
-}
-
-a {
-    transition: 0.3s;
-}
-
-a:hover {
-    color: var(--primary);
+    height: 200vh;
 }
