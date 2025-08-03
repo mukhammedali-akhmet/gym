@@ -383,13 +383,12 @@
 .header__action.message {
     flex-direction: column;
     gap: 10px;
-    width: 158.65px;
+    width: 171.35px;
 }
 
 .header__action.message.open {
     background: none;
     border: none;
-
 }
 
 #header-message-trigger {
@@ -419,6 +418,10 @@
     align-items: center;
     gap: 5px;
     transition: 0.2s;
+}
+
+.header__action-messages>a>img {
+    width: 18px;
 }
 
 .header__action-messages>a:hover {
@@ -700,9 +703,9 @@
     display: none;
     height: auto;
     flex-direction: column;
-    gap: 10px;
-
-    padding: 8.5px 16px;
+    justify-content: space-between;
+    height: 83px;
+    padding: 6px 10px;
     background: #050404;
     border: 1px solid var(--primary);
     border-radius: 10px;
@@ -711,7 +714,6 @@
 #header__action-dropdown.active {
     display: flex;
 }
-
 
 @media (max-width: 1850px) {
     #scroll-menu-more-context-menu-toggle {
