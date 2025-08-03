@@ -153,7 +153,6 @@
     color: var(--foreground);
 }
 
-.header__main-right-bottom>div,
 .header__main-right-bottom>form,
 .header__main-right-bottom>ul {
     height: 100%;
@@ -218,6 +217,7 @@
 #solutions-context-menu-content {
     position: absolute;
     left: 0;
+    top: 25px;
     display: none;
     background: var(--background);
     gap: 81px;
