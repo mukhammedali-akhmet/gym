@@ -383,12 +383,13 @@
 .header__action.message {
     flex-direction: column;
     gap: 10px;
+    width: 158.65px;
 }
 
 .header__action.message.open {
     background: none;
     border: none;
-    width: 158.65px;
+
 }
 
 #header-message-trigger {
