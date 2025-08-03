@@ -69,22 +69,31 @@ const headerNavigation = document.getElementById("header-nav-list");
 
 searchTrigger.addEventListener("click", () => {
     searchField.classList.add("active");
-    headerNavigation.style.display = "none"
+    headerNavigation.style.display = "none";
 })
 
 searchClose.addEventListener("click", () => {
     searchField.classList.remove("active");
-    headerNavigation.style.display = "flex"
+    headerNavigation.style.display = "flex";
 })
 
-const headerMessegesDropdownTriggerContaitner = document.querySelector(".header__action.message");
+const headerMessegesDropdownTriggerContainer = document.querySelector(".header__action.message");
 const headerMessegesDropdownTrigger = document.getElementById("header-message-trigger");
-const headerMessegesDropdownContent = document.querySelector(".header__action-messages");
+const headerMessegesDropdownClose = document.getElementById("header-message-close");
+const headerMessegesDropdownContent = document.getElementById("header__action-dropdown");
 
 headerMessegesDropdownTrigger.addEventListener("click", () => {
-    headerMessegesDropdownTrigger.querySelector("img").classList.toggle("active")
-    headerMessegesDropdownTriggerContaitner.classList.toggle("open")
-    headerMessegesDropdownContent.classList.toggle("active");
+    headerMessegesDropdownTrigger.classList.add("active");
+    headerMessegesDropdownClose.classList.add("active");
+    headerMessegesDropdownTriggerContainer.classList.add("open")
+    headerMessegesDropdownContent.classList.add("active");
+})
+
+headerMessegesDropdownClose.addEventListener("click", () => {
+    headerMessegesDropdownTrigger.classList.remove("active");
+    headerMessegesDropdownClose.classList.remove("active");
+    headerMessegesDropdownTriggerContainer.classList.remove("open")
+    headerMessegesDropdownContent.classList.remove("active");
 })
 
 const mobileSearchTrigger = document.getElementById("mobile-search-trigger");
